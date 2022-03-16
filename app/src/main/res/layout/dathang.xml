@@ -14,7 +14,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/tenBanh"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,34 +23,40 @@
 
     <TextView
         android:id="@+id/tenBanh"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="16dp"
         android:text="TextView"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/moTaBanh"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="340dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/moTaBanh"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="32dp"
         android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/giaBanh"
         app:layout_constraintStart_toStartOf="@+id/tenBanh"
         app:layout_constraintTop_toBottomOf="@+id/tenBanh" />
 
     <TextView
         android:id="@+id/giaBanh"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginLeft="200dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:text="TextView"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -62,7 +68,7 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -73,7 +79,7 @@
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="30 min"
@@ -85,7 +91,7 @@
 
     <ImageButton
         android:id="@+id/btnGiam"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
@@ -96,7 +102,7 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
@@ -110,9 +116,9 @@
 
     <ImageButton
         android:id="@+id/btnTang"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="4dp"
         android:layout_marginRight="4dp"
         app:layout_constraintEnd_toEndOf="@+id/giaBanh"
@@ -121,15 +127,15 @@
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Restaurants info"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <TextView
         android:id="@+id/textView10"
@@ -137,6 +143,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Order a Large Pizza but the size is the equivalent of a medium/small from other places at the same price range."
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
@@ -162,9 +169,9 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="@+id/moTaBanh"
         app:layout_constraintTop_toBottomOf="@+id/moTaBanh"
         app:srcCompat="@drawable/vector" />

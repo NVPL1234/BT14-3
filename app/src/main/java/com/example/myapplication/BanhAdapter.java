@@ -1,15 +1,21 @@
 package com.example.myapplication;
 
 import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.io.Serializable;
 import java.util.List;
 
 public class BanhAdapter extends BaseAdapter {
+    private ImageButton btnAdd;
     private Context context;
     private List<Banh> dsBanh;
     private int layout;
@@ -41,6 +47,15 @@ public class BanhAdapter extends BaseAdapter {
             convertView = LayoutInflater.from(parent.getContext()).inflate(layout, parent,false);
         }
 
+        btnAdd=(ImageButton) convertView.findViewById(R.id.btnAdd);
+        btnAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, DatHangActivity.class);
+                intent.putExtra("banh", (Serializable) dsBanh.get(position));
+                context.startActivity(intent);
+            }
+        });
 
         TextView ten = (TextView) convertView.findViewById(R.id.ten);
         TextView moTa = (TextView) convertView.findViewById(R.id.moTa);

@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
-public class Banh {
+import java.io.Serializable;
+
+public class Banh implements Serializable {
     private int hinhNen;
     private String ten;
     private String moTa;
